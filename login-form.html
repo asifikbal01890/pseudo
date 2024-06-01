@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about pseudo</title>
+    <style>
+        input{
+            display: block; 
+            margin-bottom: 20px; 
+            height: 30px;
+            width: 600px;
+        }
+        input:focus{
+            border: 1px solid red;
+            color: goldenrod;
+        }
+        input:focus-visible{
+           outline: 1px solid red;
+        }
+        input::placeholder{
+            color: coral;
+        }
+        button{
+            background-color: rgb(255, 146, 5);
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 700;
+            color: aliceblue;
+            border-radius: 5px;
+            cursor: pointer;
+           
+            border: 2px solid rgb(255, 146, 5);
+        }
+        button:hover{
+            background-color: white;
+            color: rgb(7, 5, 96);
+            border: 2px solid rgb(7, 5, 96);
+        }
+        li{
+            font-size: 32px;
+        }
+        li:first-child{
+            /* color: rgb(255, 0, 0); */
+        }
+        li:last-child{
+            background-color: brown;
+        }
+        li:nth-child(2n-1){
+            color: rgb(255, 0, 0);
+        }
+        a{
+            font-size: 30px; margin: 100px;
+        }
+        a:visited{
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Please Login</h1>
+    <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name">
+        <input type="email" required>
+        <input type="password" required>
+        <div>
+            <button type="submit">Login</button> <button type="reset"> reset</button>
+        </div>
+    </form>
+    <div>
+        <div>
+            <li>content-1</li>
+            <li>content-2</li>
+            <li>content-3</li>
+            <li>content-4</li>
+            <li>content-5</li>
+            <li>content-6</li>
+            <li>content-7</li>
+        </div>
+      <a href="https://www.w3schools.com/css/css_pseudo_classes.asp"> Go to Pseudo</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"> Go to Mojila</a>
+      <a href="http://www.github.com">Go to GitHub</a>
+    </div>
+</body>
+
+</html>
