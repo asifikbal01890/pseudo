@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position css</title>
+    <style>
+        img{
+            width: 150px;
+        }
+        .img-div{
+            position: relative;
+        }
+        .img-div div{
+            border: 2px dashed aqua;
+            
+        }
+        /* .position{
+            position: relative;
+            left: 20px;
+            top: 40px;
+        } */
+        /* .position{
+            position: absolute;
+           top: 0px;
+           right: 0;
+        } */
+        /* .position{
+            position: absolute;
+            top: 0;
+            right: 0;
+        } */
+        /* .position{
+            position: fixed;
+            top: 0px;
+        } */
+        .position{
+           position: absolute;
+           bottom: 0;
+        }
+        .img-1{
+
+        }
+        .img-2{
+            z-index: -1;
+        }
+        .img-3{
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position css</h1>
+    <ol>
+        <li> static</li>
+        <li> relative</li>
+        <li> absolute</li>
+        <li> fixed</li>
+        <li> sticky</li>
+    </ol>
+
+    <div class="img-div">
+        <div class="img-1">
+            <img src="https://st4.depositphotos.com/13349494/23275/i/450/depositphotos_232751862-stock-photo-dark-blue-shabby-wooden-background.jpg" alt="">
+        </div>
+        <div class="position img-2">
+            <img src="https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg" alt="bg-img">
+        </div>
+        <div class="img-3">
+            <img style="width: 300px;" src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg" alt="">
+        </div>
+    </div>
+    <div>
+        <h1>item-1</h1>
+        <h1>item-2</h1>
+        <h1>item-3</h1>
+        <h1>item-4</h1>
+        <h1>item-5</h1>
+        <h1>item-6</h1>
+        <h1>item-7</h1>
+        <h1>item-8</h1>
+        <h1>item-9</h1>
+        <h1>item-10</h1>
+        <h1>item-11</h1>
+        <h1>item-12</h1>
+        <h1>item-13</h1>
+        <h1>item-14</h1>
+        <h1>item-15</h1>
+        <h1>item-16</h1>
+        <h1>item-17</h1>
+        <h1>item-18</h1>
+        <h1>item-19</h1>
+        <h1>item-20</h1>
+        <h1>item-21</h1>
+        <h1>item-22</h1>
+    </div>
+</body>
+
+</html>
